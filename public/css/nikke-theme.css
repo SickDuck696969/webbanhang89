@@ -1,0 +1,111 @@
+/* nikke-theme.css */
+:root {
+    --nikke-red: #c00000;
+    --nikke-red-hover: #a00000;
+    --nikke-dark: #1a1a1a;
+    --nikke-gray: #252525;
+    --nikke-gold: #d4af37;
+    --nikke-light: #e0e0e0;
+}
+
+body {
+    background-color: var(--nikke-dark);
+    color: var(--nikke-light);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background utility classes */
+.nikke-bg-dark {
+    background-color: var(--nikke-dark) !important;
+}
+
+.nikke-bg-gray {
+    background-color: var(--nikke-gray) !important;
+}
+
+/* Text color utilities */
+.nikke-text-red {
+    color: var(--nikke-red) !important;
+}
+
+.nikke-text-gold {
+    color: var(--nikke-gold) !important;
+}
+
+/* Border utilities */
+.nikke-border-gold {
+    border: 1px solid var(--nikke-gold) !important;
+}
+
+/* Text shadow utility */
+.nikke-text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Container styling */
+.nikke-container {
+    background-color: var(--nikke-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+}
+
+/* Card styling */
+.nikke-card {
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+.nikke-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(192, 0, 0, 0.3);
+    border: 1px solid var(--nikke-red);
+}
+
+/* Button styling */
+.btn-nikke {
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-nikke-primary {
+    background-color: var(--nikke-red);
+    color: white;
+}
+
+.btn-nikke-primary:hover {
+    background-color: var(--nikke-red-hover);
+    transform: translateY(-2px);
+}
+
+.btn-nikke:focus {
+    outline: 2px solid var(--nikke-gold);
+    outline-offset: 2px;
+}
+
+/* Link styling */
+a {
+    color: var(--nikke-gold);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--nikke-red);
+}
+
+/* Header/Footer styling */
+.nikke-header, .nikke-footer {
+    background-color: var(--nikke-dark);
+    color: var(--nikke-gold);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--nikke-red);
+}
+
+/* Add more shared styles as needed */
